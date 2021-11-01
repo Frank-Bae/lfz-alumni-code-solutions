@@ -15,9 +15,9 @@ const orderHistory = [
         total: '$51.00',
         shipTo: 'Chris',
         orderDetails: '334-4863-23-989-445-4',
-        author: DragEvent. Axel,
+        author: 'Chris',
         delivery: 'Aug 16, 2020',
-        title: 'Timesless way of building',
+        title: 'Time way of building',
         return: 'Sep 10, 2020'
     }
 ]
