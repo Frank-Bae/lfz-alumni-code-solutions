@@ -1,172 +1,185 @@
 function getAverageOfTwoNumbers(x, y) {
     let result = (x + y) / 2
-    console.log(result)
-    return
+    return result
 };
-getAverageOfTwoNumbers(5, 6);
+const averageOfTwo = getAverageOfTwoNumbers(5, 6)
+console.log('average of two ', averageOfTwo)
 
 function getAverageOfThreeNumbers(x, y, z) {
     let result = (x + y + z) / 3
-    console.log(result)
-    return
+    return result
 };
-getAverageOfThreeNumbers(5, 6, 7);
+const averageOfThree = getAverageOfThreeNumbers(5, 6, 7);
+console.log('average of three', averageOfThree)
+
 
 function getRightTriangleArea(base, height) {
     let result = (base * height) / 2
-    console.log(result)
-    return
+    return result
 };
-getRightTriangleArea(3, 4);
+const rightTriangleArea = getRightTriangleArea(3, 4);
+console.log('right triangle area', rightTriangleArea)
 
 function getSquareNumber(number) {
     let result = Math.pow(number, 2)
-    console.log(result)
-    return
+    return result
 };
-getSquareNumber(9);
+const squareNumber = getSquareNumber(9);
+console.log('square number', squareNumber)
 
- function getSumOfSquares(x, y) {
+function getSumOfSquares(x, y) {
     let resultOne = Math.pow(x, 2)
     let resultTwo = Math.pow(y, 2)
     let totalResult = resultOne + resultTwo;
-    console.log(totalResult)
-    return
+    return totalResult
 }
-getSumOfSquares(3, 8)
+const sumOfSquares = getSumOfSquares(3, 8)
+console.log('sum of squares', sumOfSquares)
+
 
 function getAreaOfCircles(radius) {
     let result = radius * radius * Math.PI
-    console.log(result)
-    return
+    return result
 }
-getAreaOfCircles(3)
+const areaOfCircles = getAreaOfCircles(3);
+console.log('area of circles', areaOfCircles)
+
 
 function getFirstElement(array) {
     let result = array[0]
-    console.log(result)
-    return
+    return result
 }
-getFirstElement([4, 3, 2, 1])
+const FirstElement = getFirstElement([4, 3, 2, 1]);
+console.log('first element', FirstElement)
 
 function getSecondELement(array) {
     let result = array[1]
-    console.log(result)
-    return
+    return result
 }
-getSecondELement([4,3,2,1])
+const secondElement = getSecondELement([4,3,2,1]);
+console.log('second element', secondElement)
 
 function getElementAtIndex(array, index) {
-    let result = array.splice(2, 1)
-    console.log(result.toString())
-    return
+    let result = array.splice(2, 1).toString()
+    return result
 }
-getElementAtIndex(['i', 'tell', 'you', 'what'], 2)
+const elementAtIndex = getElementAtIndex(['i', 'tell', 'you', 'what'], 2);
+console.log('element at index', elementAtIndex);
 
 function getLengthOfArray(array) {
     let result = array.length;
-    console.log(result)
-    return
+    return result
 }
-getLengthOfArray(['i', 'tell', 'you', 'what'])
+const lengthOfArray = getLengthOfArray(['i', 'tell', 'you', 'what']);
+console.log('length of array', lengthOfArray)
 
 function getLastElement(array) {
     let lastIndex = array.length - 1
-    let result = array.splice(lastIndex, 1)
-    console.log(result.toString())
-    return
+    let result = array.splice(lastIndex, 1).toString()
+    return result
 }
-getLastElement(['i', 'tell', 'you', 'what'])
+const lastElement = getLastElement(['i', 'tell', 'you', 'what']);
+console.log('last element', lastElement);
+
 
 function getFirstCharacter(string) {
     let result = string[0]
-    console.log(result)
+    return result
 }
-getFirstCharacter('he who shall not be named')
+const firstCharacter = getFirstCharacter('he who shall not be named')
+console.log('first character', firstCharacter)
 
 function getSecondCharacter(string) {
     let result = string[1]
-    console.log(result)
+    return result
 }
-getSecondCharacter('he who shall not be named')
+const secondCharacter = getSecondCharacter('he who shall not be named')
+console.log('second character', secondCharacter)
 
 function getCharacterAtIndex(string, index) {
     let result = string[index]
-    console.log(result)
+    return result
 }
-getCharacterAtIndex('he who shall not be named', 17)
+const characterAtIndex = getCharacterAtIndex('he who shall not be named', 17);
+console.log('character at index', characterAtIndex);
 
 function getLengthOfString(string) {
     let result = string.length
-    console.log(result)
+    return result
 }
-getLengthOfString('he who shall not be named')
+const lengthOfString = getLengthOfString('he who shall not be named');
+console.log('length of string', lengthOfString);
 
 function getLastCharacter(string) {
     let lastString = string.length -1;
-    console.log(string[lastString]) 
+    let result = string[lastString]
+    return result
 }
-getLastCharacter('he who shall not be named')
+const lastCharacter = getLastCharacter('he who shall not be named');
+console.log('last character', lastCharacter)
 
-function getLastNameOfPerson(person) {
-    console.log(person.lastName)
-}
+
 var lea = {
     firstName: 'Lea',
     lastName: 'Verou'
-  };
-  getLastNameOfPerson(lea)
-
-  function getFullNameOfPerson(person) {
-      console.log(person.firstName + ' ' + person.lastName)
-  }
-  var lea = {
-    firstName: 'Lea',
-    lastName: 'Verou'
-  };
-  getFullNameOfPerson(lea)
-
-  function getDescriptionOfPerson(person) {
-      console.log(person.name + ' is a ' + person.occupation + ' from ' + person.birthPlace)
-  }
-  var lea = {
+};
+var leaProfile = {
     name: 'Lea Verou',
     occupation: 'software developer',
     birthPlace: 'Lesbos, Greece'
-  };
-  getDescriptionOfPerson(lea)
-  
-  var tim = {
+}; 
+var tim = {
     name: 'Tim Berners-Lee',
     occupation: 'computer scientist',
     birthPlace: 'London, England'
-  };
-  getDescriptionOfPerson(tim)
+};
+
+
+function getLastNameOfPerson(person) {
+    let result = person.lastName
+    return result
+}
+const lastNameOfPerson =  getLastNameOfPerson(lea)
+console.log('last name of person', lastNameOfPerson)
+ 
+
+  function getFullNameOfPerson(person) {
+      let result = person.firstName + ' ' + person.lastName
+      return result
+  }
+  const fullNameOfPerson = getFullNameOfPerson(lea);
+  console.log('full name of person', fullNameOfPerson)
+
+  function getDescriptionOfPerson(person) {
+      let result = person.name + ' is a ' + person.occupation + ' from ' + person.birthPlace;
+      return result
+  }
+    const descriptionOfPerson = getDescriptionOfPerson(leaProfile)
+    console.log('description of person', descriptionOfPerson)
+
+    const descriptionOfPersonTwo = getDescriptionOfPerson(tim)
+    console.log('description of person', descriptionOfPersonTwo)
+  
 
   function getFirstInitialOfPerson(person) {
-    console.log(person.firstName[0])
+      let result = person.firstName[0]
+      return result
   }
-  var lea = {
-    firstName: 'Lea',
-    lastName: 'Verou'
-  };
-  getFirstInitialOfPerson(lea)
+  const firstInitialOfPerson = getFirstInitialOfPerson(lea)
+  console.log('get first initial of person', firstInitialOfPerson)
+  
 
   function getInitialsOfPerson(person) {
-      console.log(person.firstName[0] + person.lastName[0])
+      let result = person.firstName[0] + person.lastName[0]
+      return result
   }
-  var lea = {
-    firstName: 'Lea',
-    lastName: 'Verou'
-  };
-  getInitialsOfPerson(lea)
+  const initialOfPerson = getInitialsOfPerson(lea)
+  console.log('initial of person', initialOfPerson)
 
   function getPropertyValue(object, key) {
-      console.log(lea[key])
+      let result = object[key]
+      return result
   }
-  var lea = {
-    name: 'Lea Verou',
-    occupation: 'software developer',
-    birthPlace: 'Lesbos, Greece'
-  };
-  getPropertyValue(lea, 'occupation')
+  const propertyValue = getPropertyValue(leaProfile, 'occupation')
+  console.log('property value', propertyValue)
+  
