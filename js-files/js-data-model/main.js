@@ -4,7 +4,8 @@ const orderHistory = [
         orderPlaced: 'August 4, 2020',
         shipTo: 'JS Masher',
         orderDetails: '1134-2323-23-213-445-4',
-        item: [
+        shippingAddresss: '111 park ave',
+        items: [
             {
                 name: 'Javascript for impatient programmers',
                 price: '$82.00',
@@ -26,7 +27,8 @@ const orderHistory = [
         orderPlaced: 'August 28, 2020',
         shipTo: 'JS Other',
         orderDetails: '334-4863-23-989-445-4',
-        item: [
+        shippingAddresss: '555 park ave',
+        items: [
             {
                 name: 'Time way of building',
                 price: '$32.00',
