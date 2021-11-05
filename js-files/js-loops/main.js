@@ -41,9 +41,13 @@ const logCharacter = logEachCharacter('javascript')
 function doubleAll(numbers) {
     const doubled = [];
     for (let i = 0; i < numbers.length; i++) {
-        
+        let doubleNum = numbers[i] * 2
+        doubled.push(doubleNum)
     }
+    return doubled
 }
+const double = doubleAll([5, 7, 9, 11])
+console.log('doubleAll', double)
 
 function getKeys(object) {
     const keys = [];
