@@ -2,6 +2,7 @@ const mainArray = ['LearningFuze', 'paschal', 'HTML', 'code', 'String']
 const mainArrayTwo = ['a', 'link', 'tO', 'ThE', 'pAsT']
 const mainArrayThree = ['LearningFuze', 'Javascript', 'HTML', 'css', 'PHP']
 const mainArrayFour = ['LearningFuze', 'zip-ties', 'Javascript', 'burgers', 'HTML']
+const mainArrayFive = ['LearningFuze', 'Web Development', 'Cascading Style Sheet', 'Advance Micro Chip']
 const arrayIsVowel = ['L', 'f', 'Z', 'a', 'E', 'I', 'o', 'U']
 console.log('main array', mainArray)
 
@@ -65,17 +66,36 @@ mainArrayFour.forEach(array => {
 })
 
 function isVowel(char) {
-    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-    for (let i = 0; i < vowels.length; i++) {
-        if (char === vowels[i]) {
-            return true
-        } else {
-            console.log('false')
-        }
-
+    const vowels = ['a', 'e', 'i', 'o', 'u']
+    let result = vowels.indexOf(char.toLowerCase()) 
+    if (result !== -1) {
+        return true
+    } else {
+        return false
     }
 }
 arrayIsVowel.forEach(array => {
     const vowel = isVowel(array)
     console.log('is vowel', vowel, array)
+})
+
+function getWords(string) {
+    const result = []
+    let word = ''
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] !== ' ') {
+            word += string[i]
+            if (i === string.length - 1) {
+                result.push(word)
+            }
+        } else {
+            result.push(word)
+            word = ''
+        }
+    }
+    return result
+}
+mainArrayFive.forEach(array => {
+    const word = getWords(array)
+    console.log('get words', word)
 })
