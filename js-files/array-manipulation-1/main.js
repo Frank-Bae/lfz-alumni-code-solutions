@@ -19,13 +19,12 @@ mainArray.forEach(array => {
 })
 
 function tail(array) {
-    let newArray = []
-    if (array.length) {
-        for (let i = 1; i < array.length; i++) {
-            newArray.push(array[i])
-        }
-    } else {
+    if (!array.length) {
         return []
+    }
+    const newArray = []
+    for (let i = 1; i < array.length; i++) {
+        newArray.push(array[i])
     }
     return newArray
 }
@@ -35,13 +34,12 @@ mainArray.forEach(array => {
 })
 
 function initial(array) {
-    let newArray = []
-    if (array.length) {
-        for (let i = 0; i < array.length - 1; i++) {
-            newArray.push(array[i])
-        }
-    } else {
+    if (!array.length) {
         return []
+    }
+    const newArray = []
+    for (let i = 0; i < array.length - 1; i++) {
+        newArray.push(array[i])
     }
     return newArray
 }
@@ -51,13 +49,12 @@ mainArray.forEach(array => {
 })
 
 function reverse(array) {
-    let newArray = []
-    if (array.length) {
-        for (let i = array.length - 1; i >= 0; i--) {
-            newArray.push(array[i])
-        }
-    } else {
+    if(!array.length) {
         return []
+    }
+    const newArray = []
+    for (let i = array.length - 1; i >= 0; i--) {
+        newArray.push(array[i])
     }
     return newArray
 }
