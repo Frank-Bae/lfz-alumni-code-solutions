@@ -99,3 +99,15 @@ mainArrayFive.forEach(array => {
     const word = getWords(array)
     console.log('get words', word)
 })
+
+function reverseWord(word) {
+    let result = ''
+    for (let i = word.length - 1; i >= 0; i--) {
+        result += word[i]
+    }
+    return result
+}
+mainArray.forEach(array => {
+    const reverse = reverseWord(array)
+    console.log('reverse word', reverse, array)
+});
